@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    width: 300px;
+}
+.btns{
+    display: flex;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    font-size: 50px;
+    
+    
+}
+.title1{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    font-size: 50px;
+
+}
+.title1 h1{
+  animation: bounce; 
+  animation-duration: 2s;
+}
+
+  .container{
+    margin-top: 200px;
+  }
+  .button:hover {
+    background-size:
+      cover,
+      10px 10px,
+      10px 10px;
+  }
+  .button:active {
+    filter: hue-rotate(250deg);
+  }
+  .title h1 {
+    animation: bounce; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-bottom: 20px;
+    margin-top: 250px;
+  }
+  .content{
+    padding-right: 40px;
+    padding-left: 40px;
+    
+  }
+  .content2{
+    padding-left: 40px;
+    
+  }
+  p{
+    width: 75%;
+  }
+  .box{
+    text-align: center;
+    border-color: aliceblue;
+    border: 3px solid rgb(46, 213, 115);
+  }
+  .info{
+    display: flex;
+  }
+  .letrot{
+    padding-left: 90px;
+  }
+  .tablo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .vback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .vback video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .vds{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    height: 150px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .galop{
+    display: flex;
+    gap: 20px;
+  }
+  p{
+    font-size: 20px;
+  }
+  .tblo{
+    width: 20%;
+    border: 1px ;
+    border-color: blueviolet;
+    margin-left: auto;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  } 
+  .p{
+    display: flex;
+  }
+  .info1{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+  }
+  div{
+    border-radius: 10px;
+  }
+  img{
+    border-radius: 10px;
+  }
+   
+.back {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  margin-right: 30px;
+ }
+ 
+ .back > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+  transition: all 0.4s ease-in;
+ }
+ 
+ .back:hover > svg {
+  font-size: 1.2em;
+  transform: translateX(-5px);
+ }
+ 
+ .back:hover {
+  box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+  transform: translateY(-2px);
+ }
+ .spirit:hover{
+  width: 190px;
+  height: 180px;
+  transition: all 1s;
+   }
+   .races:hover{
+    width: 190px;
+  height: 180px;
+  transition: all 1s;
+   }
+   .organes:hover{
+    width: 190px;
+    height: 180px;
+    transition: all 1s;
+  }
+    .shows{
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+      margin-top: 200px;
+      
+    }
+    
+    .jumpingdiv{
+      display: flex;
+      justify-content: space-between;
+    }
+    .dressagediv{
+      display: flex;
+    }
+    .racingdiv{
+      display: flex;
+    }
+    .jumpingdiv :hover{
+      -webkit-box-shadow: 10px 10px 21px 0px rgba(0,122,2,1);
+-moz-box-shadow: 10px 10px 21px 0px rgba(0,122,2,1);
+box-shadow: 10px 10px 21px 0px rgba(0,122,2,1);
+transition: all 1s;
+    }
+.dressagediv :hover{
+  -webkit-box-shadow: 10px 10px 21px 0px rgba(255,0,0,1);
+-moz-box-shadow: 10px 10px 21px 0px rgba(255,0,0,1);
+box-shadow: 10px 10px 21px 0px rgba(255,0,0,1);
+transition: all 1s;
+}
+    .racingdiv :hover{
+      -webkit-box-shadow: 10px 10px 21px 0px rgba(44,3,227,1);
+-moz-box-shadow: 10px 10px 21px 0px rgba(44,3,227,1);
+box-shadow: 10px 10px 21px 0px rgba(44,3,227,1);
+      transition: all 1s;
+    }
+    .contacts{
+      display: flex;
+      justify-content: center;
+      padding-bottom: 150px;
+    }
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #131313;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 12px;
+  background-color: #ecd448;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+ }
+ /*From uiverse.io*/
+ .btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 120%;
+  background-color: #ff6700;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+ }
+ 
+ .btn:hover {
+  background-color: #4cc9f0;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+ }
+ 
+ .btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+ }
+ 
+ .btn:active {
+  transform: scale(0.9);
+ }
+ .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px;
+}
+nav{
+  position: fixed;
+}
+/* From Uiverse.io by cssbuttons-io */ 
+.navbarbutton {
+  --color: #560bad;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  background-color: #ecd448;
+}
+
+.navbarbutton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.navbarbutton:hover {
+  color: #fff;
+  background-color: #0d3b66;
+}
+
+.navbarbutton:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.navbarbutton:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.navbarbutton:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+}
+.btns{
+  display: flex;
+  gap: 30px;
+}

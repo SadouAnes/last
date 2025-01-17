@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="vback">
+      <video
+        src="./vids/mylivewallpapers-com-Aurora-Shooting-Stars-4K.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <nav class="nav" style="background-color: black">
+      <a href="./index.html"
+        ><img src="./imgs/logo.png" alt="" class="logo"
+      /></a>
+
+      <a href="./index.html"
+        ><button class="back">
+          <svg
+            height="16"
+            width="16"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            viewBox="0 0 1024 1024"
+          >
+            <path
+              d="M874.690416 495.52477c0 11.2973-9.168824 20.466124-20.466124 20.466124l-604.773963 0 188.083679 188.083679c7.992021 7.992021 7.992021 20.947078 0 28.939099-4.001127 3.990894-9.240455 5.996574-14.46955 5.996574-5.239328 0-10.478655-1.995447-14.479783-5.996574l-223.00912-223.00912c-3.837398-3.837398-5.996574-9.046027-5.996574-14.46955 0-5.433756 2.159176-10.632151 5.996574-14.46955l223.019353-223.029586c7.992021-7.992021 20.957311-7.992021 28.949332 0 7.992021 8.002254 7.992021 20.957311 0 28.949332l-188.073446 188.073446 604.753497 0C865.521592 475.058646 874.690416 484.217237 874.690416 495.52477z"
+            ></path>
+          </svg>
+          <span>Back</span>
+        </button></a
+      >
+    </nav>
+    <div class="ttl">
+      <h1>The shows</h1>
+    </div>
+    <div
+      class="shows"
+      style="padding-left: 10px; display: flex; flex-direction: column"
+    >
+      <div class="jumpingdiv">
+        <div style="display: flex; align-items: center;justify-content: center;">
+          <img
+            src="./imgs/ana.jpg"
+            alt=""
+            onclick="jump1()"
+            class="ana"
+            width="200px"
+            height="190px"
+            
+          />
+        </div>
+        <h2
+          style="
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          ShowJumping
+        </h2>
+        <p class="anap" style="font-size: 25px">
+          Show jumping is a part of a group of English riding equestrian events
+          that also includes eventing, hunters, and equitation. Jumping classes
+          are commonly seen at horse shows throughout the world, including the
+          Olympics. Sometimes shows are limited exclusively to jumpers.
+          Sometimes jumper classes are offered in conjunction with other
+          English-style events. Sometimes, show jumping is but one division of a
+          very large, all-breed competition that includes a very wide variety of
+          disciplines. Jumping classes may be governed by various national horse
+          show sanctioning organizations, such as the United States Equestrian
+          Federation or the British Showjumping Association. International
+          competitions are governed by the rules of the International Federation
+          for Equestrian Sports.
+        </p>
+      </div>
+      <div class="dressagediv">
+        <div style="display: flex; align-items: center;justify-content: center;">
+          <img
+            src="./imgs/dressage.png"
+            alt=""
+            onclick="jump2()"
+            class="dressage"
+            width="190px"
+            height="170px"
+            
+          />
+        </div>
+        <h2
+          style="
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          Dressage
+        </h2>
+        <p class="dressagep">
+          Dressage is a form of horse riding performed in exhibition and
+          competition, as well as an art sometimes pursued solely for the sake
+          of mastery. As an equestrian sport defined by the International
+          Equestrian Federation, dressage is described as "the highest
+          expression of horse training" where "horse and rider are expected to
+          perform from memory a series of predetermined movements". Competitions
+          are held at all levels from amateur to the Olympic Games and World
+          Equestrian Games. Its fundamental purpose is to develop, through
+          standardized progressive training methods, a horse's natural athletic
+          ability and willingness to perform, thereby maximizing its potential
+          as a riding horse. At the peak of a dressage horse's gymnastic
+          development, the horse responds smoothly to a skilled rider's minimal
+          aids. The rider is relaxed and appears effort-free while the horse
+          willingly performs the requested movement. The discipline has a rich
+          history with ancient roots in the writings of Xenophon. Modern
+          dressage has evolved as an important equestrian pursuit since the
+          Renaissance when Federico Grisone's "The Rules of Riding" was
+          published in 1550, one of the first notable European treatises on
+          equitation since Xenophon's On Horsemanship. Much about training
+          systems used today reflects practices of classical dressage. In modern
+          dressage competition, successful training at the various levels is
+          demonstrated through the performance of "tests", prescribed series of
+          movements ridden within a standard arena. Judges evaluate each
+          movement on the basis of a standard appropriate to the level of the
+          test and assign each movement a score from zero to ten zero being "not
+          executed" and 10 being "excellent". A competitor achieving all 6s (or
+          60% overall) might typically then move up to the next level.
+        </p>
+      </div>
+      <div class="racingdiv">
+        <div style="display: flex; align-items: center;justify-content: center;">
+          <img
+            src="./imgs/racing.png"
+            alt=""
+            onclick="jump3()"
+            class="racing"
+            width="190px"
+            height="170px"
+            
+          />
+        </div>
+        <h2
+          style="
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+          "
+        >
+          Racing
+        </h2>
+        <p class="racingp" style="font-size: 25px">
+          Horse racing is an equestrian performance activity, typically
+          involving two or more horses ridden by jockeys (or sometimes driven
+          without riders) over a set distance for competition. It is one of the
+          most ancient of all sports, as its basic premise to identify which of
+          two or more horses is the fastest over a set course or distance has
+          been mostly unchanged since at least classical antiquity. Due to
+          animal cruelty, companies and individuals are boycotting horse racing
+          and it has been steadily declining in popularity worldwide. Horse
+          races vary widely in format, and many countries have developed their
+          own particular traditions around the sport. Variations include
+          restricting races to particular breeds, running over obstacles,
+          running over different distances, running on different track surfaces,
+          and running in different gaits. In some races, horses are assigned
+          different weights to carry to reflect differences in ability, a
+          process known as handicapping. While horses are sometimes raced purely
+          for sport, a major part of horse racing's interest and economic
+          importance is in the gambling associated with it, an activity that in
+          2019 generated a worldwide market worth around US$115 billion.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

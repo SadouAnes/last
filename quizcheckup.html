@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./quizstyles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="hero">
+        <header style="height: 10%">
+          <a href="./index.html"
+            ><button class="button">
+              <span class="text"
+                ><div class="arrow-left icon"></div>
+                Back to learning</span
+              >
+            </button></a
+          >
+          <a href="./quizpageN1.html"
+            ><button class="button">
+              <span class="text"
+                ><div class="arrow-right icon"></div>
+                Start the quiz</span
+              >
+            </button></a
+          >
+        </header>
+        <div
+          style="
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              height: 50%;
+            "
+          >
+            <div
+              class="left"
+              style="
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                border: 3px solid;
+                border-color: white;
+              "
+            >
+              <div class="topleft" class="check" style="display: flex;justify-content: center;">
+                <button class="button" style="height: 10px;"><div class="profile icon"></div></button>
+              </div>
+              <div class="buttomleft" class="check">
+                <h3>You should read and learn before starting the quiz</h3>
+              </div>
+            </div>
+            <div
+              class="right"
+              class="check"
+              style="
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                border: 3px solid;
+                border-color: white;
+              "
+            >
+              <div class="topright">
+                <h3>Totale questions 7</h3>
+              </div>
+              <div class="bottumright" class="check">
+                <h4>Are you READY!!</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module">
+    import { neonCursor } from "https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js";
+
+    neonCursor({
+      el: document.getElementById("app"),
+      shaderPoints: 16,
+      curvePoints: 80,
+      curveLerp: 0.5,
+      radius1: 5,
+      radius2: 30,
+      velocityTreshold: 10,
+      sleepRadiusX: 100,
+      sleepRadiusY: 100,
+      sleepTimeCoefX: 0.0025,
+      sleepTimeCoefY: 0.0025,
+    });
+  </script>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./quizstyles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="vback">
+      <video src="./vids/quizsBachground.mp4" autoplay loop muted></video>
+    </div>
+    <form id="quiz-form">
+      <div class="questions">
+        <div class="left" style="height: 100%">
+          <div style="border-color: #fff; border: 1px solid">
+            <label
+              >Witch horse is better at work, pulling heavy loads
+              <input type="text" name="q1" /> </label
+            ><br />
+            <div style="display: flex; justify-content: space-around">
+              <h5>Arabian</h5>
+              <h5>Clydesdale</h5>
+              <h5>Cob</h5>
+            </div>
+          </div>
+          <div style="border-color: #fff; border: 1px solid">
+            <label
+              >What is the class of the horse ?
+              <input type="text" name="q2" /> </label
+            ><br />
+            <div style="display: flex; justify-content: space-around">
+              <h5>ovipare</h5>
+              <h5>vivipare</h5>
+            </div>
+          </div>
+          <div style="border-color: #fff; border: 1px solid">
+            <label
+              >The Arabian horse is better at
+              <input type="text" name="q3" /> </label
+            ><br />
+            <div style="display: flex; justify-content: space-around">
+              <h5>pulling heavy loads</h5>
+              <h5>endurance riding</h5>
+            </div>
+          </div>
+          <div style="border-color: #fff; border: 1px solid">
+            <label
+              >Witch horse is better for first time riders
+              <input type="text" name="q4" /> </label
+            ><br />
+            <div style="display: flex; justify-content: space-around">
+              <h5>Cob</h5>
+              <h5>Andalusian</h5>
+              <h5>Thoroughbred</h5>
+            </div>
+          </div>
+        </div>
+        <div class="right" style="height: 100%">
+          <div style="border-color: #fff; border: 1px solid">
+            <label
+              >What horse race is this one<img
+                src="./imgs/American Quarter Horse.png"
+                alt=""
+                height="100px"
+                width="140px"
+              />
+              <input type="text" name="q5" /> </label
+            ><br />
+
+            <div style="display: flex; justify-content: space-around">
+              <h5>Cob</h5>
+              <h5>American Quarter</h5>
+              <h5>Thoroughbred</h5>
+            </div>
+          </div>
+          <div style="border-color: #fff; border: 1px solid">
+            <label>
+              The dressage is
+              <input type="text" name="q6" /> </label
+            ><br />
+
+            <div>
+              <h6>
+                I.a part of a group of English riding equestrian events that
+                also includes eventing, hunters, and equitation
+              </h6>
+              <h6>
+                II.a form of horse riding performed in exhibition and
+                competition, as well as an art sometimes pursued solely for the
+                sake of mastery.
+              </h6>
+              <h6>
+                III.an equestrian performance activity, typically involving two
+                or more horses ridden by jockeys
+              </h6>
+            </div>
+          </div>
+          <div style="border-color: #fff; border: 1px solid">
+            <label
+              >What horse part is this<img
+                src="./imgs/theHoof.png"
+                alt=""
+                height="100px"
+                width="140px"
+              />
+              <input type="text" name="q7" /> </label
+            ><br />
+
+            <div style="display: flex; justify-content: space-around">
+              <h5>Hoof</h5>
+              <h5>The head</h5>
+              <h5>Middle part</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+    <div style="display: flex;justify-content: center;">
+      <button class="next">
+        <a href="./results.html">Next</a>
+      </button>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    Swal.fire("Click on submit and then next after finishing the test!");
+    const quiz = [
+      {
+        question: "Witch horse is better at work, pulling heavy loads ",
+        correctAnswer: "Clydesdale",
+      },
+      {
+        question: "What is the class of the horse ?",
+        correctAnswer: "vivipare",
+      },
+      {
+        question: "The Arabian horse is better at",
+        correctAnswer: "endurance riding",
+      },
+      {
+        question: "Witch horse is better for first time riders",
+        correctAnswer: "Cob",
+      },
+      {
+        question: "What horse race is this one",
+        correctAnswer: "American Quarter",
+      },
+      {
+        question: "The dressage is",
+        correctAnswer:
+          "a form of horse riding performed in exhibition and competition, as well as an art sometimes pursued solely for the sake of mastery",
+      },
+      {
+        question: "What horse part is this",
+        correctAnswer: "Hoof",
+      },
+    ];
+
+    document
+      .getElementById("quiz-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const userAnswers = [
+          formData.get("q1"),
+          formData.get("q2"),
+          formData.get("q3"),
+          formData.get("q4"),
+          formData.get("q5"),
+          formData.get("q6"),
+          formData.get("q7"),
+        ];
+
+        const score = calculateCorrectAnswers(quiz, userAnswers);
+        document.getElementById(
+          "result"
+        ).textContent = `You got ${score} correct answers.`;
+      });
+
+    function calculateCorrectAnswers(quiz, userAnswers) {
+      let correctCount = 0;
+
+      quiz.forEach((item, index) => {
+        if (
+          item.correctAnswer.toLowerCase() === userAnswers[index]?.toLowerCase()
+        ) {
+          correctCount++;
+        }
+      });
+
+      return correctCount;
+    }
+  </script>
+</html>
